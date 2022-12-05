@@ -4,7 +4,7 @@ import Routes from '../../config/name.routes';
 
 const HomeMenu = () => {
   return (
-    <div className="bg-white rounded-xl shadow-md w-full max-w-xl  border border-gray-300 overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:gap-0">
+    <div className="bg-white rounded-xl  shadow-md w-full max-w-xl  border border-gray-300 overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:gap-0">
       <div className='col-span-1 md:col-span-2 p-4 text-center font-bold border-b bg-gray-100'>
         SIMPLE
       </div>
@@ -48,7 +48,7 @@ const TheoryOption = ({ title, subtitle, route, position, infinito }: any) => {
     <Link to={route}>
        
       
-      <div className={"p-4 md:p-8 w-ful hover:bg-gray-100 flex items-center"}>
+      {/* <div className={"p-4 md:p-8 w-ful hover:bg-gray-100 flex items-center"}>
        
           <div className='bg-gray-100 rounded-full p-2 shadow border'>
           {
@@ -64,7 +64,53 @@ const TheoryOption = ({ title, subtitle, route, position, infinito }: any) => {
           <p>{subtitle}</p>
         </div>
         
-      </div>
+      </div> */}
+
+
+
+<div className="bg-white flex flex-col p-4 max-w-sm mx-auto rounded-lg shadow-xl">
+  <div>
+    <img
+        src="https://www.wearedrew.co/hs-fs/hubfs/Webinars%20para%20HOME%20(17)-1.png?width=490&name=Webinars%20para%20HOME%20(17)-1.png"
+        alt="Usuario"
+        className="w-full object-cover"
+    />
+  </div>
+  <div className="bg-gray-900 mx-4 rounded-lg flex items-center gap-2 -mt-8 z-10 shadow-xl py-2 px-6">
+    <h3 className="text-white text-lg font-semibold">{title}</h3>
+  </div>
+  <div className="px-6 py-4 flex flex-col gap-2">
+    <h1 className="text-xl font-semibold text-gray-800">
+      {subtitle}
+    </h1>
+    
+    <div className="flex items-center mt-4 text-gray-700">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
+      </svg>
+      {
+            infinito ? 
+            <h1>Infinito</h1>
+            : 
+            <h1>Finito</h1>
+          }
+      
+    </div>
+    
+    
+  </div>
+</div>
     </Link>
   );
 };

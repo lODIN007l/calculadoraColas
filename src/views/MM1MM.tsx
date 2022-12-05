@@ -82,7 +82,8 @@ const MM1MM = () => {
           {showResult.loading ? (
             <p className="self-center my-36">Calculando resultados...</p>
           ) : !showResult.show ? (
-            <Wait/>
+            // <Wait/>
+            ""
           ) : (
             <div>
               <div className="relative flex my-3 justify-center items-center">

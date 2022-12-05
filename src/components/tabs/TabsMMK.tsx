@@ -79,7 +79,7 @@ const TabsMMK = ({ result, labelPn, data }: TabsMMKProps) => {
               />
               <div className="flex flex-col col-span-1 sm:col-span-2 items-center py-4 px-2 border">
                     <div className='grid grid-cols-4 gap-2'>
-                    {
+                    {/* {
                       dataPn && dataPn.length > 0 && dataPn.map((item: any, index: number) => {
                         return(<div className={"flex flex-col border p-1 " + (index ===0 ? "bg-gray-100" : "")}>
                         <small><b>{`P${index}: `}</b>{item.pn.toFixed(6)}</small>
@@ -88,9 +88,10 @@ const TabsMMK = ({ result, labelPn, data }: TabsMMKProps) => {
                       </div>)
                         
                       })
-                    }</div>
+                    } */}
+                    </div>
                     
-                    <p className="text-center text-xs mt-2">Calculo Pn en los casos {'n>=0'} hasta n=8</p>
+                    {/* <p className="text-center text-xs mt-2">Calculo Pn en los casos {'n>=0'} hasta n=8</p> */}
                   </div>
               <div style={{textAlign: "center"}} className="border p-2 col-span-1 sm:col-span-2">
             <p ><b>Calculo de W (Tiempo)</b></p>
@@ -136,10 +137,10 @@ const TabsMMK = ({ result, labelPn, data }: TabsMMKProps) => {
               />
               
             
-                <div style={{textAlign: "center"}} className="border p-2 col-span-1 sm:col-span-2">
+                {/* <div style={{textAlign: "center"}} className="border p-2 col-span-1 sm:col-span-2">
                   <p className="ml-2 self-end"><b>CONDICION DE ESTABILIDAD</b> {'a/(k*u)<1 = ' + result.k} </p>
                   <Line data={data}/>
-                </div>
+                </div> */}
           </div>
         </MathJax.Provider>
       </TabPanel>

@@ -220,7 +220,8 @@ const MMK = () => {
           {showResult.loading ? (
             <p className="self-center my-36">Calculando resultados...</p>
           ) : !showResult.show ? (
-            <Wait/>
+            // <Wait/>
+            ""
           ) : (
             <div className='w-full'>
               <TabsMMK result={result} labelPn={labelPn} data={data}/>

@@ -98,7 +98,8 @@ const MM1 = () => {
           {showResult.loading ? (
             <p className="self-center my-36">Calculando resultados...</p>
           ) : !showResult.show ? (
-            <Wait/>
+            // <Wait/> 
+            ""
           ) : (
             <div>
               <div className="relative flex my-3 justify-center items-center">
@@ -269,7 +270,7 @@ const MM1 = () => {
               </div>
             </div>
             <div className="my-8">
-              <input type="submit" value="Calcular" className='hover:bg-gray-200 hover:shadow-lg cursor-pointer px-4 py-2 rounded shadow'/>
+              <input type="submit" value="Calcular" className='hover:bg-gray-200 hover:shadow-lg cursor-pointer px-4 py-2 rounded shadow bg-indigo-600 font-bold text-white'/>
             </div>
           </form>
         </div>

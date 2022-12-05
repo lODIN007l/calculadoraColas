@@ -36,7 +36,7 @@ const Slidebar = () => {
         }}
         title="GitHub repository"
         className="hidden lg:block"
-        href="https://github.com/PepVal/queueing-theory-calculator"
+        href="#"
         target="_blank"
         rel="noreferrer"
       >
