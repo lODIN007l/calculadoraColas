@@ -220,7 +220,8 @@ const MMK = () => {
           {showResult.loading ? (
             <p className="self-center my-36">Calculando resultados...</p>
           ) : !showResult.show ? (
-            <Wait/>
+            // <Wait/>
+            ""
             
           ) : (
             <div className='w-full'>
@@ -335,6 +336,10 @@ const MMK = () => {
             </div>
             <div className="my-8">
               <Button text="Calcular" type={ButtonType.Submit} />
+            </div>
+            <div>
+              <p>Formulas</p>
+              <img src="https://raw.githubusercontent.com/lODIN007l/calculadoraColas/master/src/imagenes/PICM.png" alt="cola"  />
             </div>
           </form>
           

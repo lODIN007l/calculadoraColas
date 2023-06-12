@@ -183,9 +183,9 @@ const MM1 = () => {
                   
                   </MathJax.Provider>
               </div>
-              <CostTabMM1 mmk={result} />
-              <img src="" alt="cola"  />
               
+              <img src="https://raw.githubusercontent.com/lODIN007l/calculadoraColas/master/src/imagenes/PICS.png" alt="cola"  />
+              <CostTabMM1 mmk={result} />
             </div>
           )}
         </div>

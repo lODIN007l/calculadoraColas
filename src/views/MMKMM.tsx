@@ -272,6 +272,10 @@ const MMKMM = () => {
               <Button text="Calcular" type={ButtonType.Submit} />
             </div>
           </form>
+          <div>
+              <p>Formulas</p>
+              <img src="https://raw.githubusercontent.com/lODIN007l/calculadoraColas/master/src/imagenes/PFCM.jpg" alt="cola"  />
+            </div>
         </div>
         
       </div>
