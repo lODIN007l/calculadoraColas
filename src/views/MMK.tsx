@@ -84,37 +84,37 @@ const MMK = () => {
  })
 
   const config = {
-      // type: 'line',
-      // data: data,
-      // options: {
-      //    responsive: true,
-      //    plugins: {
-      //       title: {
-      //          display: true,
-      //          text: 'Chart.js Line Chart - Cubic interpolation mode',
-      //       },
-      //    },
-      //    interaction: {
-      //       intersect: false,
-      //    },
-      //    scales: {
-      //       x: {
-      //          display: true,
-      //          title: {
-      //             display: true,
-      //          },
-      //       },
-      //       y: {
-      //          display: true,
-      //          title: {
-      //             display: true,
-      //             text: 'Value',
-      //          },
-      //          suggestedMin: -10,
-      //          suggestedMax: 200,
-      //       },
-      //    },
-      // },
+      type: 'line',
+      data: data,
+      options: {
+         responsive: true,
+         plugins: {
+            title: {
+               display: true,
+               text: 'Chart.js Line Chart - Cubic interpolation mode',
+            },
+         },
+         interaction: {
+            intersect: false,
+         },
+         scales: {
+            x: {
+               display: true,
+               title: {
+                  display: true,
+               },
+            },
+            y: {
+               display: true,
+               title: {
+                  display: true,
+                  text: 'Value',
+               },
+               suggestedMin: -10,
+               suggestedMax: 200,
+            },
+         },
+      },
    }
   
    const {
@@ -220,8 +220,8 @@ const MMK = () => {
           {showResult.loading ? (
             <p className="self-center my-36">Calculando resultados...</p>
           ) : !showResult.show ? (
-            // <Wait/>
-            ""
+            <Wait/>
+            
           ) : (
             <div className='w-full'>
               <TabsMMK result={result} labelPn={labelPn} data={data}/>
@@ -268,14 +268,14 @@ const MMK = () => {
                 register={register}
                 error={errors.k}
                 container="mt-2"
-                // required={{
-                //   required: 'El campo es obligatorio',
-                //   min: {
-                //     value: 0,
-                //     message: 'Debe tener mínimo 0',
-                //     // message: 'Debe tener mínimo 2 servidores para ser M/M/K',
-                //   },
-                // }}
+                required={{
+                  required: 'El campo es obligatorio',
+                  min: {
+                    value: 0,
+                    message: 'Debe tener mínimo 0',
+                    // message: 'Debe tener mínimo 2 servidores para ser M/M/K',
+                  },
+                }}
               />
               <Input
                 symbol="N"

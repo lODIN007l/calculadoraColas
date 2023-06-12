@@ -52,7 +52,7 @@ const MM1MM = () => {
     let miu = parseFloat(data.miu.toString());
     let m = parseInt(data.m.toString());
     let n = parseInt(data.n.toString());
-    const model = new MM1MMModel(lambda, miu, m, n);
+    const model = new MM1MMModel(lambda, miu, m, 1);
 
     setShowResult({ loading: true, show: false });
     await model.calculateAll(data.system, data.calculate);

@@ -71,7 +71,7 @@ const CostTabMM1 = ({ mmk }: any) => {
     cost.calculateCTTSE(0.5)
     cost.calculateCTS(0.5)
     // cost.calculateCT
-
+    // TODO: implementar el calculo de costos para MMK
     setCost(cost);
     console.log("COST: ", cost)
     setShowResult(true);

@@ -19,7 +19,7 @@ const Toolbar = ({ heightVh }: propsToolbar) => {
       </div>
       <div className="absolute flex items-center justify-center w-full lg:w-11/12">
         <h1 className="text-xl font-bold text-white lg:text-center lg:whitespace-nowrap">
-          <Link title="Home" to="/">Queueing Calculator</Link>
+          <Link title="Home" to="/">Calculadora Colas</Link>
         </h1>
         <div className="hidden lg:flex lg:w-full lg:justify-end lg:items-center">
           <NavItem name="Theory" route={Routes.theory} />

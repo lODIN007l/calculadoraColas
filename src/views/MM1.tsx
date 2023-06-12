@@ -184,6 +184,8 @@ const MM1 = () => {
                   </MathJax.Provider>
               </div>
               <CostTabMM1 mmk={result} />
+              <img src="" alt="cola"  />
+              
             </div>
           )}
         </div>
@@ -217,7 +219,7 @@ const MM1 = () => {
             <div className="mt-2">
               <Input
                 symbol="N"
-                label="clientes"
+                label="clientes |Para Pn "
                 name="n"
                 placeholder="0"
                 type={InputTypes.Number}
